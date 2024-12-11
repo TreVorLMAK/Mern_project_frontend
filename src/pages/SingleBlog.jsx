@@ -8,7 +8,7 @@ const SingleBlog = () => {
     const navigate = useNavigate()
     const [blog, setBlog] = useState({})
     const fetchSingleBlog = async()=>{
-       const response = await axios.get("http://localhost:3000/blog/" + id)
+       const response = await axios.get("https://blog-backend-hqda.onrender.com/blog/" + id)
        setBlog(response.data.data)
     }
     useEffect(()=>{
@@ -17,7 +17,7 @@ const SingleBlog = () => {
 
 
     const deleteGarneyFunction = async()=>{
-       const response = await axios.delete("http://localhost:3000/blog/" + id)
+       const response = await axios.delete("https://blog-backend-hqda.onrender.com/blog/" + id)
 
        if(response.status === 200){
         alert("Blog deleted successfully")
