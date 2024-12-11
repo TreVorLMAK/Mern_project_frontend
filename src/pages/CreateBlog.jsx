@@ -24,7 +24,7 @@ const CreateBlog = () => {
 
     const CreateBlog = async(e)=>{
         e.preventDefault()
-        const response = await axios.post("https://blog-backend-hqda.onrender.com//blog", data,{
+        const response = await axios.post("https://blog-backend-hqda.onrender.com/blog", data,{
             headers:{
                 "Content-Type": "multipart/form-data"
                 }
